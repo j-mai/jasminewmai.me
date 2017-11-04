@@ -1,0 +1,119 @@
+body {
+  margin: 0px 0px;
+}
+
+/*div wrapper for title page*/
+#title {
+  background-color: #c0dfd9;
+  display: table;
+  width: 100%;
+}
+
+#greetingFormat {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#greeting {
+  font-size: 100px;
+  font-family: "Josefin Slab", serif;
+  color: white;
+  text-align: center;
+}
+
+#shortDescription {
+  color: white;
+  font-family: "Josefin Sans", serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+/*controls all of the major sections*/
+.wrap {
+  height: 700px;
+}
+
+/*take out margin of name header*/
+.wrap h1 {
+  margin: 0px;
+}
+
+div .floatLeft {
+  float: left;
+  width: 30%;
+
+}
+
+div .floatRight {
+  float: right;
+  width: 70%;
+
+}
+
+img {
+  height: 300px;
+  width: 200px;
+}
+/*
+body {
+  margin: 0px 200px;
+  margin-top: 0px;
+  font-family: "Georgia", Times, sans-serif;
+}
+
+div {
+  height: 500px;
+  image taken from https://fineartamerica.com/featured/1-san-francisco-skyline-in-watercolor-background-pablo-romero.html
+  margin-top: 0px;
+  background-image: url("images/SFBackgroundEdited.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+section {
+  font-size: 18px;
+  margin: 50px 0px;
+}
+
+.title {
+  padding-top: 100px;
+  font-family: "Papyrus", "Harrington", fantasy;
+  font-size: 75px;
+  text-align: center;
+}
+
+#jasminePic {
+  height: 250px;
+  width: 200px;
+  margin-right: 50px;
+  float: left;
+}
+
+#tori {
+  height: 300px;
+  width: 200px;
+
+}
+
+#nara {
+  height: 200px;
+  width: 300px;
+  margin-top: 75px;
+}
+
+#kinkakuji {
+  height: 300px;
+  width: 200px;
+}
+
+.travelPics{
+  margin: 25px 30px;
+  border: 6px solid #A9A9A9;
+  float: left;
+}
+*/
