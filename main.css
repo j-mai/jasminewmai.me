@@ -5,8 +5,8 @@ body {
 /*div wrapper for title page*/
 #title {
   background-color: #c0dfd9;
-  display: table;
   width: 100%;
+  height: 600px;
 }
 
 #greetingFormat {
@@ -30,7 +30,8 @@ body {
 
 /*controls all of the major sections*/
 .wrap {
-  height: 700px;
+  height: 750px;
+  display: table;
 }
 
 /*take out margin of name header*/
@@ -40,19 +41,71 @@ body {
 
 div .floatLeft {
   float: left;
-  width: 30%;
+  width: 15%;
 
 }
 
 div .floatRight {
   float: right;
-  width: 70%;
+  width: 85%;
 
 }
 
 img {
   height: 300px;
   width: 200px;
+}
+
+div #AboutMe {
+  background: #3b3a36;
+  height: inherit;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+div #AboutMe h3 {
+  text-align: center;
+  line-height: 700px;
+  color: white;
+  font-family: "Josefin Slab", serif;
+  font-size: 25px;
+}
+
+#jasminePic {
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  display: block;
+  margin-top: 3%;
+  border-radius: 50%;
+}
+
+p {
+  font-family: "Josefin Sans", serif;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 18px;
+  text-align: center;
+}
+
+#AboutMeContent div {
+  width: 50%;
+  margin: 0 auto;
+  background-position: center;
+  text-align: center;
+
+}
+
+#cat {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+#dog {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
 /*
 body {
