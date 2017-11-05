@@ -2,6 +2,13 @@ body {
   margin: 0px 0px;
 }
 
+/*controls all of the major sections*/
+.wrap {
+  height: auto;
+  display: table;
+  overflow: hidden;
+}
+
 /*div wrapper for title page*/
 #title {
   background-color: #c0dfd9;
@@ -17,7 +24,7 @@ body {
 #greeting {
   font-size: 100px;
   font-family: "Josefin Slab", serif;
-  color: white;
+  color: #3b2921;
   text-align: center;
 }
 
@@ -28,42 +35,35 @@ body {
   text-align: center;
 }
 
-/*controls all of the major sections*/
-.wrap {
-  height: 750px;
-  display: table;
-}
 
 /*take out margin of name header*/
 .wrap h1 {
   margin: 0px;
 }
 
+/*properties of the left and right panels*/
 div .floatLeft {
   float: left;
-  width: 15%;
-
+  width: 20%;
+  height: inherit;
+  display: table-cell;
+  vertical-align: middle;
+  padding-bottom: 100%;
+  margin-bottom: -100%;
 }
 
 div .floatRight {
   float: right;
-  width: 85%;
-
-}
-
-img {
-  height: 300px;
-  width: 200px;
-}
-
-div #AboutMe {
-  background: #3b3a36;
+  width: 80%;
   height: inherit;
-  display: table-cell;
-  vertical-align: middle;
+  text-align: center;
+  padding-bottom: 100%;
+  margin-bottom: -100%;
+  margin-top: 3%;
+
 }
 
-div #AboutMe h3 {
+.floatLeft h3 {
   text-align: center;
   line-height: 700px;
   color: white;
@@ -71,21 +71,21 @@ div #AboutMe h3 {
   font-size: 25px;
 }
 
+img {
+  height: 300px;
+  width: 200px;
+}
+
+#AboutMe {
+  background: #3b2921;
+}
+
 #jasminePic {
   height: 200px;
   width: 200px;
-  margin: auto;
   display: block;
-  margin-top: 3%;
+  margin: auto;
   border-radius: 50%;
-}
-
-p {
-  font-family: "Josefin Sans", serif;
-  padding-left: 10%;
-  padding-right: 10%;
-  font-size: 18px;
-  text-align: center;
 }
 
 #AboutMeContent div {
@@ -96,6 +96,18 @@ p {
 
 }
 
+/*setting style choices for paragraphs*/
+p {
+  font-family: "Josefin Sans", serif;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 18px;
+  text-align: center;
+}
+
+
+
+/*pictures of pets*/
 #cat {
   width: 150px;
   height: 150px;
@@ -107,66 +119,26 @@ p {
   height: 150px;
   border-radius: 50%;
 }
-/*
-body {
-  margin: 0px 200px;
-  margin-top: 0px;
-  font-family: "Georgia", Times, sans-serif;
+
+/*second panel*/
+#hobbies {
+  background-color: #F9D8CF;
 }
 
-div {
-  height: 500px;
-  image taken from https://fineartamerica.com/featured/1-san-francisco-skyline-in-watercolor-background-pablo-romero.html
-  margin-top: 0px;
-  background-image: url("images/SFBackgroundEdited.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
+#hobbies h3 {
+  color: #3b2921;
 }
 
-h2 {
-  margin-top: 0;
-}
-
-section {
-  font-size: 18px;
-  margin: 50px 0px;
-}
-
-.title {
-  padding-top: 100px;
-  font-family: "Papyrus", "Harrington", fantasy;
-  font-size: 75px;
-  text-align: center;
-}
-
-#jasminePic {
-  height: 250px;
-  width: 200px;
-  margin-right: 50px;
-  float: left;
-}
-
-#tori {
-  height: 300px;
-  width: 200px;
-
-}
-
-#nara {
-  height: 200px;
-  width: 300px;
-  margin-top: 75px;
-}
-
-#kinkakuji {
-  height: 300px;
-  width: 200px;
+#hobbiesContent {
+  margin-top: 2%;
+  /*image from: https://i.pinimg.com/originals/14/c6/28/14c628fe0c3e119feb376a14d11060aa.png*/
+  background-image: url("images/world_map.png");
+  background-size: contain;
 }
 
 .travelPics{
   margin: 25px 30px;
-  border: 6px solid #A9A9A9;
-  float: left;
+  border: 6px solid #3b2921;
+  height: 200px;
+  width: 200px;
 }
-*/
