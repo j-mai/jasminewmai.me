@@ -1,5 +1,6 @@
 body {
   margin: 0px 0px;
+  font-family: 'Leckerli One', cursive;
 }
 
 /*controls all of the major sections*/
@@ -23,14 +24,16 @@ body {
 
 #greeting {
   font-size: 100px;
-  font-family: "Josefin Slab", serif;
+  font-family: 'Leckerli One', cursive;
+  /*font-family: "Josefin Slab", serif;*/
   color: #3b2921;
   text-align: center;
 }
 
 #shortDescription {
   color: white;
-  font-family: "Josefin Sans", serif;
+  font-family: 'Leckerli One', cursive;
+  /*font-family: "Josefin Sans", serif;*/
   font-size: 25px;
   text-align: center;
 }
@@ -67,7 +70,8 @@ div .floatRight {
   text-align: center;
   line-height: 700px;
   color: white;
-  font-family: "Josefin Slab", serif;
+  font-family: "Lobster", cursive;
+  /*font-family: "Josefin Slab", serif;*/
   font-size: 25px;
 }
 
@@ -98,7 +102,8 @@ img {
 
 /*setting style choices for paragraphs*/
 p {
-  font-family: "Josefin Sans", serif;
+  font-family: "Lobster", cursive;
+  /*font-family: "Josefin Sans", serif;*/
   padding-left: 10%;
   padding-right: 10%;
   font-size: 18px;
