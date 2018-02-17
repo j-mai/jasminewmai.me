@@ -1,9 +1,156 @@
-body {
+html, body, section {
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+  background-color: #D31B52;
+  padding: 0;
   margin: 0;
+  position: fixed;
+  text-align: right;
+  top: 0;
+  width: 100%;
+  height: 70px;
+}
+
+nav ul li{
+  font-family: 'Autour One', cursive;
+  padding: 0;
+  margin: 0;
+  font-size: 1.2em;
+  display: inline;
+  line-height: 5rem;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  vertical-align: middle;
+}
+
+nav li a:hover {
+  background-color: #1A1A1D;
+}
+
+
+#greetingFormat {
+  background-color: #1A1A1D;
+  padding: 7rem;
+}
+
+h3 {
+  font-family: 'Barrio', cursive;
+  font-size: 4em;
+}
+
+#greeting {
+  font-family: 'Barrio', cursive;
+  font-size: 6em;
+  color: #C3073F;
+}
+
+#shortDescription {
+  font-size: 2.3em;
+  font-family: 'Autour One', cursive;
+  color: white;
+}
+
+#interestIntro, #funFactsContent {
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 1.5em;
+
+}
+
+#work {
+  background-color: #1A1A1D;
+  color: white;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wrap {
+  display: flex;
+}
+
+.floatLeft {
+  background-color: #c0dfd9;
+  flex: 1;
+  padding: 1rem;
+  text-align: center;
+  flex: 30%;
+}
+
+.floatRight {
+  flex: 1;
+  padding: 3rem;
+  line-height: 1.6;
+  flex: 70%;
+}
+
+#photosContent {
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+
+p, ul {
+  font-size: 1.2em;
+  font-family: 'Autour One', cursive;
+}
+
+
+#AboutMe {
+  background-color: #C3073F;
+  color: white;
+}
+
+img {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#photosContent {
+  padding: 3rem;
+  margin: 0;
+
+}
+
+#jasminePic {
+  border-radius: 50%;
+  height: 12rem;
+  width: auto;
   padding: 0;
 }
 
-.cover {
-  background-image: url("images/background");
-  background-size: cover;
+#funFacts {
+  background-color: #C3073F;
+  color: white;
+}
+
+@media only screen and (max-width: 680px) {
+  .wrap {
+    flex-direction: column;
+  }
+
+  .div {
+    width: 100%;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  #greetingFormat {
+    font-size: .7rem;
+  }
+
+
 }

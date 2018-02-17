@@ -1,12 +1,14 @@
+<!-- Slideshow code taken from https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="main.css">
-  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Leckerli+One" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=BioRhyme+Expanded" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Autour+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
 
   <meta charset="utf-8">
   <title>Jasmine Mai</title>
@@ -17,86 +19,116 @@
   <nav>
     <ul>
       <li><a href="#AboutMe"> About Me </a></li>
-      <li><a href="#hobbies"> Interests </a></li>
-      <li><a href="#photos"> Photography </a></li>
+      <li><a href="#work"> Work </a></li>
+      <li><a href="#funFacts"> Fun Facts </a></li>
+    </ul>
   </nav>
 
-  <!--first panel-->
-  <div class="wrap" id="title">
-    <div id="greetingFormat">
-      <h1 id="greeting"> <b>Developer. Photographer. Animation Enthusiast.</b> </th>
-      <h3 id="shortDescription">Interested in using art and technology to improve my community.</h3>
-    </div>
-  </div>
+    <!--first panel-->
+    <section class="wrap" id="title">
+      <div class="floatLeft" id="greetingFormat">
+        <h1 id="greeting"> <b>Hi, I'm Jasmine!</b> </h1>
+        <h3 id="shortDescription">I'm interested in using storytelling and technology to improve my community.</h3>
+      </div>
+    </section>
 
-  <!--second panel -->
-  <a id="about_jasmine">
-    <div class="wrap">
+    <!--second panel -->
+    <section class="wrap">
       <div class="floatLeft" id="AboutMe">
         <h3><b>About Me</b></h3>
       </div>
-      <section class="floatRight" id="AboutMeContent">
+
+      <div class="floatRight" id="AboutMeContent">
         <img id="jasminePic" src="images/Jasmine.jpg">
-        <p> Hi, I'm Jasmine, and I am currently a sophomore at Dartmouth College. I plan on majoring in
-            Computer Science modified with Digital Arts and minoring in Japanese and Human-Centered
-            Design. I enjoy logically thinking through problems and being able come up with solutions
-            that can have an impact on others, and for me, CS is the perfect medium to do so.
-            I'm proficient in Python and Java, and I'm currently interested app development,
-            virtual reality, and web development.
+        <p> I'm currently a sophomore at Dartmouth College majoring in
+          Computer Science modified with Digital Arts and minoring in Japanese and Human-Centered
+          Design. I enjoy logically thinking through problems and being able come up with solutions
+          that can have an impact on others, and for me, CS is the perfect medium to do so.
+          I'm proficient in Python and Java, and I'm currently interested app development,
+          virtual reality, and web development. As an animation enthusiast, I am also interested in
+          using animation to tell stories.
         </p>
         <p>
-            Currently, I am interested in how media and technology can be used to create empathy. I have seen how voices can be trampled upon and silenced.
-            I've realized that our biases impair our willingness to listen to the stories and struggles of others. In our
-            increasingly polarized society, it is hard to look past our prejudices to start and create these conversations.
-            I believe that animation provides a special zone where we can start these stories, and I also think
-            that technology like virtual and augmented reality have strong potential to help create a more
-            connected and empathetic world.
+          I'm intrigued by how media and technology can be used to create empathy. I have seen how voices can be trampled upon and silenced.
+          I've realized that our biases impair our willingness to listen to the stories and struggles of others. In our
+          increasingly polarized society, it is hard to look past our prejudices to start important conversations with people who have different perspectives.
+          I believe that animation provides a place removed enough from reality where we can start these discussions and begin
+          breaking the walls between people. I also think that virtual and augmented reality have strong potentials to help
+          create a more connected and empathetic world because they can tell stories in an immersive, close environment.
         </p>
-    </a>
 
+      </div>
     </section>
-  </div>
 
-  <!--third panel-->
-  <div class="wrap">
+    <!--third panel-->
+    <section class = "wrap">
+      <div class="floatLeft" id="work">
+        <h3><b>Work</b></h3>
+      </div>
+      <div class="floatRight" id="photosContent">
 
-    <div class="floatLeft" id="hobbies">
-      <h3> <b>Hobbies</b> </h3>
-    </div>
+        <img class="travelPics" id="bench" src="images/bench.jpg">
+        <img class="travelPics" id="dartmouthBW" src="images/blackandWhite.jpg">
+        <img class="travelPics" id="river" src="images/sunRiver.jpg">
+        <img class="travelPics" id="snowTwilight" src="images/snowTwilight.jpg">
 
-    <section class="floatRight" id="hobbiesContent">
-
-      <p> In my free time, I like to... </p>
-        <ul>
-          <li> Watch movies (faves include <i> Inception </i>, <i> Spirited Away </i>, and <i> Coco </i>)</li>
-          <li> Take photos (check them out <a href="#photos"> here </a>)<li>
-          <li> Travel (here's my <a href = "https://www.instagram.com/travel.jaz/?hl=enInstagram"> travel Instagram </a> </li>
-          <li> Watch NBA </li>
-          <li> Hang out with friends </li>
-          <li> Sleep </li>
-        </ul>
-      </p>
-    </div>
+      </div>
+    </section>
 
     <!--fourth panel-->
+    <section class="wrap">
+
+      <div class="floatLeft" id="funFacts">
+        <h3><b>Fun Facts</b></h3>
+      </div>
+
+      <div class="floatRight" id="hobbiesContent">
+
+        <p id="interestIntro"> <b>In my free time, I like to...</b> </p>
+        <ul>
+          <li> Watch movies (faves include <i> Inception </i>, <i> Spirited Away </i>, and <i> Coco</i>)</li>
+          <li> Take photos (check them out <a href="#work"> here</a>)</li>
+          <li> Travel (here's my <a href = "https://www.instagram.com/travel.jaz/?hl=enInstagram"> travel Instagram</a>) </li>
+          <li> Watch NBA </li>
+          <li> Hang out with friends </li>
+          <li> And recently, watch the Olympics! </li>
+        </ul>
+
+        <p id="funFactsContent"> <b>Here are some fun facts about me:</b> </p>
+        <ul>
+          <li> I'm from San Francisco, CA </li>
+          <li> I have a cat and a dog. They complement each other because
+            my cat has a small head and fat body and my dog has a big head but
+            small body </li>
+        </ul>
+
+
+      </div>
+    </section>
+
+
+
+
+
+    <!--fourth panel
     <div class="wrap">
 
-      <div class="floatLeft" id="photos">
-        <h3> <b>Photography</b> </h3>
-      </div>
-
-      <div>
-        <img class="travelPics" id="tori" src="images/tori.jpeg">
-        <img class="travelPics" id="well" src="images/well.JPG">
-        <img class="travelPics" id="kinkakuji" src="images/kinkakuji.jpeg">
-      </div>
-      <div>
-        <img class="travelPics" id="nara" src="images/nara.jpeg">
-        <img class="travelPics" id="laputa" src="images/Laputa.JPG">
-      </div>
-
-    </section>
+    <div class="floatLeft" id="photos">
+    <h3> <b>Photography</b> </h3>
   </div>
 
+  <div>
+  <img class="travelPics" id="tori" src="images/tori.jpeg">
+  <img class="travelPics" id="well" src="images/well.JPG">
+  <img class="travelPics" id="kinkakuji" src="images/kinkakuji.jpeg">
+</div>
+<div>
+<img class="travelPics" id="nara" src="images/nara.jpeg">
+<img class="travelPics" id="laputa" src="images/Laputa.JPG">
+</div>
+
+</section>
+</div>
+-->
 </body>
 </html>
