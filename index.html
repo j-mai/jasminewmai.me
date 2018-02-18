@@ -16,97 +16,110 @@
 
 <body>
   <!--navigation bar-->
-  <nav>
-    <ul>
-      <li><a href="#AboutMe"> About Me </a></li>
-      <li><a href="#work"> Work </a></li>
-      <li><a href="#funFacts"> Fun Facts </a></li>
-    </ul>
-  </nav>
+  <header>
+    <div class="nav">
+      <ul>
+        <li><a href="#AboutMe"> About Me </a></li>
+        <li><a href="#work"> Work </a></li>
+        <li><a href="#funFacts"> Fun Facts </a></li>
+      </ul>
+    </div>
+  </header>
 
-    <!--first panel-->
-    <section class="wrap" id="title">
-      <div class="floatLeft" id="greetingFormat">
-        <h1 id="greeting"> <b>Hi, I'm Jasmine!</b> </h1>
-        <h3 id="shortDescription">I'm interested in using storytelling and technology to improve my community.</h3>
-      </div>
-    </section>
+  <!-- dropdown menu for small screens -->
 
-    <!--second panel -->
-    <section class="wrap">
-      <div class="floatLeft" id="AboutMe">
-        <h3><b>About Me</b></h3>
-      </div>
+  <button class="dropbtn" onclick="openNav()" >&#9776;</button>
 
-      <div class="floatRight" id="AboutMeContent">
-        <img id="jasminePic" src="images/Jasmine.jpg">
-        <p> I'm currently a sophomore at Dartmouth College majoring in
-          Computer Science modified with Digital Arts and minoring in Japanese and Human-Centered
-          Design. I enjoy logically thinking through problems and being able come up with solutions
-          that can have an impact on others, and for me, CS is the perfect medium to do so.
-          I'm proficient in Python and Java, and I'm currently interested app development,
-          virtual reality, and web development. As an animation enthusiast, I am also interested in
-          using animation to tell stories.
-        </p>
-        <p>
-          I'm intrigued by how media and technology can be used to create empathy. I have seen how voices can be trampled upon and silenced.
-          I've realized that our biases impair our willingness to listen to the stories and struggles of others. In our
-          increasingly polarized society, it is hard to look past our prejudices to start important conversations with people who have different perspectives.
-          I believe that animation provides a place removed enough from reality where we can start these discussions and begin
-          breaking the walls between people. I also think that virtual and augmented reality have strong potentials to help
-          create a more connected and empathetic world because they can tell stories in an immersive, close environment.
-        </p>
+  <div id="myNav" class="dropdown">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="dropdownLinks">
+      <a href="#AboutMe" onclick="closeNav()"> About Me </a>
+      <a href="#work" onclick="closeNav()"> Work </a>
+      <a href="#funFacts" onclick="closeNav()"> Fun Facts </a>
+    </div>
+  </div>
 
-      </div>
-    </section>
+  <!--first panel-->
+  <section class="wrap" id="title">
+    <div class="floatLeft" id="greetingFormat">
+      <h1 id="greeting"> <b>Hi, I'm Jasmine!</b> </h1>
+      <h3 id="shortDescription">I'm interested in using storytelling and technology to improve my community.</h3>
+    </div>
+  </section>
 
-    <!--third panel-->
-    <section class = "wrap">
-      <div class="floatLeft" id="work">
-        <h3><b>Work</b></h3>
-      </div>
-      <div class="floatRight" id="photosContent">
+  <!--second panel -->
+  <section class="wrap">
+    <div class="floatLeft" id="AboutMe">
+      <h3><b>About Me</b></h3>
+    </div>
 
-        <img class="travelPics" id="bench" src="images/bench.jpg">
-        <img class="travelPics" id="dartmouthBW" src="images/blackandWhite.jpg">
-        <img class="travelPics" id="river" src="images/sunRiver.jpg">
-        <img class="travelPics" id="snowTwilight" src="images/snowTwilight.jpg">
+    <div class="floatRight" id="AboutMeContent">
+      <img id="jasminePic" src="images/Jasmine.jpg">
+      <p> I'm currently a sophomore at Dartmouth College majoring in
+        Computer Science modified with Digital Arts and minoring in Japanese and Human-Centered
+        Design. I enjoy logically thinking through problems and being able come up with solutions
+        that can have an impact on others, and for me, CS is the perfect medium to do so.
+        I'm proficient in Python and Java, and I'm currently interested app development,
+        virtual reality, and web development. As an animation enthusiast, I am also interested in
+        using animation to tell stories.
+      </p>
+      <p>
+        I'm intrigued by how media and technology can be used to create empathy. I have seen how voices can be trampled upon and silenced.
+        I've realized that our biases impair our willingness to listen to the stories and struggles of others. In our
+        increasingly polarized society, it is hard to look past our prejudices to start important conversations with people who have different perspectives.
+        I believe that animation provides a place removed enough from reality where we can start these discussions and begin
+        breaking the walls between people. I also think that virtual and augmented reality have strong potentials to help
+        create a more connected and empathetic world because they can tell stories in an immersive, close environment.
+      </p>
 
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <!--fourth panel-->
-    <section class="wrap">
+  <!--third panel-->
+  <section class = "wrap">
+    <div class="floatLeft" id="work">
+      <h3><b>Work</b></h3>
+    </div>
+    <div class="floatRight" id="photosContent">
 
-      <div class="floatLeft" id="funFacts">
-        <h3><b>Fun Facts</b></h3>
-      </div>
+      <img class="travelPics" id="bench" src="images/bench.jpg">
+      <img class="travelPics" id="dartmouthBW" src="images/blackandWhite.jpg">
+      <img class="travelPics" id="river" src="images/sunRiver.jpg">
+      <img class="travelPics" id="snowTwilight" src="images/snowTwilight.jpg">
 
-      <div class="floatRight" id="hobbiesContent">
+    </div>
+  </section>
 
-        <p id="interestIntro"> <b>In my free time, I like to...</b> </p>
-        <ul>
-          <li> Watch movies (faves include <i> Inception </i>, <i> Spirited Away </i>, and <i> Coco</i>)</li>
-          <li> Take photos (check them out <a href="#work"> here</a>)</li>
-          <li> Travel (here's my <a href = "https://www.instagram.com/travel.jaz/?hl=enInstagram"> travel Instagram</a>) </li>
-          <li> Watch NBA </li>
-          <li> Hang out with friends </li>
-          <li> And recently, watch the Olympics! </li>
+  <!--fourth panel-->
+  <section class="wrap">
+
+    <div class="floatLeft" id="funFacts">
+      <h3><b>Fun Facts</b></h3>
+    </div>
+
+    <div class="floatRight" id="hobbiesContent">
+
+      <p id="interestIntro"> <b>In my free time, I like to...</b> </p>
+      <ul>
+        <li> Watch movies (faves include <i> Inception </i>, <i> Spirited Away </i>, and <i> Coco</i>)</li>
+        <li> Take photos (check them out <a href="#work"> here</a>)</li>
+        <li> Travel (here's my <a href = "https://www.instagram.com/travel.jaz/?hl=enInstagram"> travel Instagram</a>) </li>
+        <li> Watch NBA </li>
+        <li> Hang out with friends </li>
+        <li> And recently, watch the Olympics! </li>
+      </ul>
+
+      <p id="funFactsContent"> <b>Here are some fun facts about me:</b> </p>
+      <ul>
+        <li> I'm from San Francisco, CA </li>
+        <li> I have a cat and a dog. They complement each other because
+          my cat has a small head and fat body and my dog has a big head but
+          small body </li>
         </ul>
 
-        <p id="funFactsContent"> <b>Here are some fun facts about me:</b> </p>
-        <ul>
-          <li> I'm from San Francisco, CA </li>
-          <li> I have a cat and a dog. They complement each other because
-            my cat has a small head and fat body and my dog has a big head but
-            small body </li>
-        </ul>
-
 
       </div>
     </section>
-
-
 
 
 
@@ -130,5 +143,15 @@
 </section>
 </div>
 -->
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+</script>
 </body>
 </html>

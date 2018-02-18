@@ -3,36 +3,48 @@ html, body, section {
   padding: 0px;
 }
 
-nav {
+.dropdownLinks {
+  display: none;
+}
+
+.nav {
   background-color: #D31B52;
-  padding: 0;
-  margin: 0;
   position: fixed;
-  text-align: right;
-  top: 0;
   width: 100%;
-  height: 70px;
-}
-
-nav ul li{
-  font-family: 'Autour One', cursive;
-  padding: 0;
   margin: 0;
+  padding: 0;
+}
+
+.nav ul {
+  list-style: none;
+  background-color: #D31B52;
+  text-align: center;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 1.2em;
+}
+
+.nav li {
+  font-family: 'Autour One', cursive;
   font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
   display: inline;
-  line-height: 5rem;
+  float: right;
 }
 
-nav li a {
-  color: white;
+.nav a {
   text-decoration: none;
-  padding: 1rem;
-  vertical-align: middle;
+  color: white;
+  display: block;
+  transition: .3s;
+  padding: .5em 1em;
 }
 
-nav li a:hover {
+.nav a:hover {
   background-color: #1A1A1D;
 }
+
 
 
 #greetingFormat {
@@ -144,8 +156,72 @@ img {
     width: 100%;
   }
 
-  nav ul {
+  .nav {
     display: none;
+  }
+
+  .dropbtn {
+    background-color: #1A1A1D;
+    color: white;
+    padding: 12px;
+    border: 3px solid #D31B52;
+    border-radius: 25%;
+    font-family: 'Autour One', cursive;
+    position: fixed;
+    display: inline-block;
+    top: 2rem;
+    left: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .dropbtn:hover {
+    cursor: pointer;
+    background-color: #D31B52;
+  }
+
+  .dropdown {
+    height: 0%;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(26,26,29); /* Black fallback color */
+    overflow-y: hidden;
+
+  }
+
+  .dropdownLinks {
+    position: relative;
+    top: 0%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 0px;
+    display: block;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown a {
+      color: white;
+      padding: 8px;
+      text-decoration: none;
+      display: block;
+      font-family: 'Autour One', cursive;
+      transition: 0.3s;
+      font-size: 36px;
+      line-height: 2em;
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdownLinks a:hover, .dropdownLinks a:focus {background-color: #C3073F}
+
+  .dropdown .closebtn {
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
+      font-size: 100px;
+      color: #C3073F;
+
   }
 
   #greetingFormat {
