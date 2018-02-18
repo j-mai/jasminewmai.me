@@ -3,16 +3,24 @@ html, body, section {
   padding: 0px;
 }
 
+/*hide dropdowns till small enough screen*/
 .dropdownLinks {
   display: none;
 }
 
+.dropbtn {
+  display: none;
+}
+
+/*navigation bar*/
 .nav {
   background-color: #D31B52;
   position: fixed;
   width: 100%;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  align-items: flex-end;
 }
 
 .nav ul {
@@ -22,6 +30,7 @@ html, body, section {
   margin: 0;
   padding-top: 0;
   padding-bottom: 1.2em;
+  float: left;
 }
 
 .nav li {
@@ -29,8 +38,7 @@ html, body, section {
   font-size: 1.2em;
   line-height: 40px;
   height: 40px;
-  display: inline;
-  float: right;
+  float: left;
 }
 
 .nav a {
@@ -46,7 +54,7 @@ html, body, section {
 }
 
 
-
+/*greting panel*/
 #greetingFormat {
   background-color: #1A1A1D;
   padding: 7rem;
@@ -57,6 +65,7 @@ h3 {
   font-size: 4em;
 }
 
+/*greeting words*/
 #greeting {
   font-family: 'Barrio', cursive;
   font-size: 6em;
@@ -69,6 +78,7 @@ h3 {
   color: white;
 }
 
+/*hobbies and fun facts sections*/
 #interestIntro, #funFactsContent {
   font-size: 1.5em;
   text-align: center;
@@ -76,6 +86,7 @@ h3 {
 
 }
 
+/*photos section*/
 #work {
   background-color: #1A1A1D;
   color: white;
@@ -104,12 +115,6 @@ div {
   padding: 3rem;
   line-height: 1.6;
   flex: 70%;
-}
-
-#photosContent {
-  padding: 0;
-  margin: 0;
-  background-color: white;
 }
 
 p, ul {
@@ -147,19 +152,23 @@ img {
   color: white;
 }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 700px) {
+
   .wrap {
     flex-direction: column;
   }
 
+  /*make all divs full width; stacked*/
   .div {
     width: 100%;
   }
 
+  /*hide horizontal nav bar*/
   .nav {
     display: none;
   }
 
+  /*button to open dropdown*/
   .dropbtn {
     background-color: #1A1A1D;
     color: white;
@@ -174,6 +183,7 @@ img {
     font-size: 1.5rem;
   }
 
+  /*button changes color upon hover to open dropdown*/
   .dropbtn:hover {
     cursor: pointer;
     background-color: #D31B52;
@@ -186,16 +196,16 @@ img {
     z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
-    background-color: rgb(26,26,29); /* Black fallback color */
+    background-color: rgb(26,26,29); /* Dark Brown color */
     overflow-y: hidden;
 
   }
 
   .dropdownLinks {
     position: relative;
-    top: 0%; /* 25% from the top */
+    top: 0%;
     width: 100%; /* 100% width */
-    text-align: center; /* Centered text/links */
+    text-align: center; /* Centered links */
     margin-top: 0px;
     display: block;
   }
@@ -224,6 +234,7 @@ img {
 
   }
 
+  /*changes size of greeting*/
   #greetingFormat {
     font-size: .7rem;
   }
