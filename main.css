@@ -12,6 +12,10 @@ html, body, section {
   display: none;
 }
 
+.closebtn {
+  display: none;
+}
+
 /*navigation bar*/
 .nav {
   background-color: #D31B52;
@@ -196,7 +200,7 @@ img {
     z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
-    background-color: rgb(26,26,29); /* Dark Brown color */
+    background-color: #1A1A1D; /* Dark Brown color */
     overflow-y: hidden;
 
   }
