@@ -28,9 +28,9 @@
     </div>
   </header>
 
-  <!-- dropdown menu for small screens -->
+  <!-- dropdown menu for small width; based off of https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp-->
 
-  <button class="dropbtn" onclick="openNav()" >&#9776;</button>
+  <span class="dropbtn" onclick="openNav()" >&#9776;</span>
 
   <div id="myNav" class="dropdown">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -85,12 +85,81 @@
     </div>
     <div class="floatRight" id="photosContent">
 
-      <img class="travelPics" id="bench" src="images/bench.jpg">
-      <img class="travelPics" id="dartmouthBW" src="images/blackandWhite.jpg">
-      <img class="travelPics" id="river" src="images/sunRiver.jpg">
-      <img class="travelPics" id="snowTwilight" src="images/snowTwilight.jpg">
+      <p id="modelingIntro"> <b>Modeling in Maya: </b> </p>
+
+      <div class="slideshow-container">
+
+        <div class="mySlides2 fade">
+          <img class="workPhotos" id="room1" src="images/room1.jpg">
+        </div>
+
+
+        <div class="mySlides2 fade">
+          <img class="workPhotos" id="room2" src="images/room2.jpg">
+        </div>
+
+        <div class="mySlides2 fade">
+          <img class="workPhotos" id="room3" src="images/room3.jpg">
+        </div>
+
+        <div class="mySlides2 fade">
+          <img class="workPhotos" id="room4" src="images/room4.jpg">
+        </div>
+
+        <div class="mySlides2 fade">
+          <img class="workPhotos" id="room5" src="images/room5.jpg">
+        </div>
+
+        <span class="prev" onclick="plusSlides(-1, 1)">&#10094;</span>
+        <span class="next" onclick="plusSlides(1, 1)">&#10095;</span>
+
+      </div>
+
+      <div class="dotGroup2">
+        <span class="dot2" onclick="currentSlide(1, 1)"></span>
+        <span class="dot2" onclick="currentSlide(2, 1)"></span>
+        <span class="dot2" onclick="currentSlide(3, 1)"></span>
+        <span class="dot2" onclick="currentSlide(4, 1)"></span>
+        <span class="dot2" onclick="currentSlide(5, 1)"></span>
+      </div>
+
+      <p id="photosIntro"> <b>I like taking photos in my free time. Here are some of my
+        favorite ones: </b> </p>
+
+
+      <div class="slideshow-container">
+
+        <div class="mySlides1 fade">
+          <img class="workPhotos" id="bench" src="images/bench.jpg">
+        </div>
+
+
+        <div class="mySlides1 fade">
+          <img class="workPhotos" id="dartmouthBW" src="images/blackandWhite.jpg">
+        </div>
+
+        <div class="mySlides1 fade">
+          <img class="workPhotos" id="river" src="images/sunRiver.jpg">
+        </div>
+
+        <div class="mySlides1 fade">
+          <img class="workPhotos" id="snowTwilight" src="images/snowTwilight.jpg">
+        </div>
+
+        <span class="prev" onclick="plusSlides(-1, 0)">&#10094;</span>
+        <span class="next" onclick="plusSlides(1, 0)">&#10095;</span>
+
+      </div>
+
+      <div class="dotGroup1">
+        <span class="dot1" onclick="currentSlide(1, 0)"></span>
+        <span class="dot1" onclick="currentSlide(2, 0)"></span>
+        <span class="dot1" onclick="currentSlide(3, 0)"></span>
+        <span class="dot1" onclick="currentSlide(4, 0)"></span>
+      </div>
 
     </div>
+
   </section>
 
   <!--fourth panel-->
@@ -118,34 +187,13 @@
         <li> I have a cat and a dog. They complement each other because
           my cat has a small head and fat body and my dog has a big head but
           small body </li>
-        </ul>
+        <li> I hate papaya. </li>
+      </ul>
 
 
       </div>
     </section>
 
-
-
-    <!--fourth panel
-    <div class="wrap">
-
-    <div class="floatLeft" id="photos">
-    <h3> <b>Photography</b> </h3>
-  </div>
-
-  <div>
-  <img class="travelPics" id="tori" src="images/tori.jpeg">
-  <img class="travelPics" id="well" src="images/well.JPG">
-  <img class="travelPics" id="kinkakuji" src="images/kinkakuji.jpeg">
-</div>
-<div>
-<img class="travelPics" id="nara" src="images/nara.jpeg">
-<img class="travelPics" id="laputa" src="images/Laputa.JPG">
-</div>
-
-</section>
-</div>
--->
 
 <script>
 function openNav() {
@@ -155,6 +203,44 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.height = "0%";
 }
+
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"];
+var dotsId = ["dot1", "dot2"];
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+//To show thumbnails with the dots
+function currentSlide(n, no) {
+  showSlides(slideIndex[no] = n, no);
+}
+
+//function to show images
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  var dots = document.getElementsByClassName(dotsId[no]);
+
+  if (n > x.length) {slideIndex[no] = 1}
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  x[slideIndex[no]-1].style.display = "block";
+  dots[slideIndex[no]-1].className += " active";
+}
+
+
+
 </script>
 </body>
 </html>
