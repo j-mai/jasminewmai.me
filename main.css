@@ -1,337 +1,157 @@
 html, body, section {
   margin: 0px;
   padding: 0px;
+  font-family: 'Poppins', sans-serif;
 }
 
-/*hide dropdowns till small enough screen*/
-.dropdownLinks {
-  display: none;
+h1, h2, h3, p {
+  font-family: 'Poppins', sans-serif;
 }
 
-.dropbtn {
-  display: none;
-}
-
-.closebtn {
-  display: none;
-}
-
-/*navigation bar*/
-.nav {
-  background-color: #D31B52;
-  position: fixed;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  align-items: flex-end;
-  z-index: 10;
-}
-
-.nav ul {
-  list-style: none;
-  background-color: #D31B52;
-  text-align: center;
-  margin: 0;
-  padding-top: 0;
-  padding-bottom: 1.2em;
-  float: left;
-}
-
-.nav li {
-  font-family: 'Autour One', cursive;
-  font-size: 1.2em;
-  line-height: 40px;
-  height: 40px;
-  float: left;
-}
-
-.nav a {
-  text-decoration: none;
-  color: white;
-  display: block;
-  transition: .3s;
-  padding: .5em 1em;
-}
-
-.nav a:hover {
-  background-color: #1A1A1D;
-}
-
-img {
-  width: 80%;
-  height: auto;
-  margin: 0 auto;
-}
-
-.mySlides1, .mySlides2 {
-  display: none;
-}
-
-.slideshow-container {
-  max-width: 100%;
-  position: relative;
-  margin: auto;
-  margin-top: 0;
-}
-
-.workPhotos {
+#overallWorkContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
   width: 100%;
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  padding: 1rem;
-  margin-right: 0;
-  color: white;
-  font-weight: bold;
-  font-size: 1.2rem;
-  transition: 0.6s ease;
-  user-select: none;
+#aboutMe {
+  padding: 5rem;
+}
+#aboutMe div {
+  width: 100%;
 }
 
-.next {
-  right: 0;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(26,26,29,0.8);
-}
-
-/* The dots/bullets/indicators */
-.dot1, .dot2 {
-  cursor:pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #63595C;
-  border-radius: 50%;
-  display: inline-block;
-  transition: 0.6s ease;
-}
-
-.dotGroup1, .dotGroup2 {
-  display: inline;
-  text-align:center;
-  margin-bottom: 1rem;
-}
-
-.active, .dot1:hover, .dot2:hover {
-  background-color: #C3073F;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-
-
-
-/*greting panel*/
-#greetingFormat {
-  background-color: #1A1A1D;
-  padding: 7rem;
-}
-
-h3 {
-  font-family: 'Barrio', cursive;
-  font-size: 4em;
-}
-
-/*greeting words*/
-#greeting {
-  font-family: 'Barrio', cursive;
-  font-size: 6em;
-  color: #C3073F;
-}
-
-#shortDescription {
-  font-size: 2.3em;
-  font-family: 'Autour One', cursive;
-  color: white;
-}
-
-/*hobbies and fun facts sections*/
-#interestIntro, #funFactsContent, #photosIntro {
-  font-size: 1.5em;
-  text-align: center;
-  line-height: 1.5em;
-
-}
-
-/*photos section*/
-#work {
-  background-color: #1A1A1D;
-  color: white;
-}
-
-#photosIntro, #modelingIntro {
-  padding-top: 1em;
-  font-size: 1.2em;
-  text-align: center;
-  line-height: 1.5em;
-}
-
-div {
+.workContainer {
+  width: 40%;
+  margin: 2rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-}
-
-.wrap {
-  display: flex;
-}
-
-.floatLeft {
-  background-color: #c0dfd9;
-  flex: 1;
-  padding: 1rem;
   text-align: center;
-  flex: 30%;
+  flex-wrap: wrap;
+
 }
 
-.floatRight {
-  flex: 1;
-  padding: 3rem;
-  line-height: 1.6;
-  flex: 70%;
+.workContainer img {
+  width: 90%;
+  margin-bottom: 10px;
 }
 
-p, ul {
-  font-size: 1.2em;
-  font-family: 'Autour One', cursive;
+#work {
+  display: flex;
+  flex-direction: column;
+
+}
+#intro {
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  text-align: center;
 }
 
-
-#AboutMe {
-  background-color: #C3073F;
-  color: white;
-}
-
-
-#photosContent {
-  padding: 3rem;
-  margin: 0;
-
+#name {
+  font-family: 'Satisfy', cursive;
+  font-size: 5rem;
 }
 
 #jasminePic {
   border-radius: 50%;
-  height: 12rem;
-  width: auto;
-  padding: 0;
+  width: 90%;
+
 }
 
-#funFacts {
-  background-color: #C3073F;
-  color: white;
+#imageSpan {
+  height: 100%;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
-@media only screen and (max-width: 700px) {
+#aboutMe {
+  display: flex;
+  flex-direction: column;
+}
 
-  .wrap {
+#aboutMeContainer {
+  display: flex;
+}
+
+#descriptionContainer {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
+#imageContainer {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.heading h2 {
+  font-family: 'Satisfy', cursive;
+  font-size: 50px;
+}
+
+#work {
+  background-image: url("images/background.jpg");
+  background-size: cover;
+}
+
+.artContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 640px) {
+
+  .artContainer{
+    display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
-  /*make all divs full width; stacked*/
-  .div {
-    width: 100%;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
   }
 
-  /*hide horizontal nav bar*/
-  .nav {
-    display: none;
+  #aboutMeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
   }
-
-  /*button to open dropdown*/
-  .dropbtn {
-    background-color: #1A1A1D;
-    color: white;
-    padding: 12px;
-    border: 3px solid #D31B52;
-    border-radius: 25%;
-    font-family: 'Autour One', cursive;
-    position: fixed;
-    display: inline-block;
-    top: 2rem;
-    left: 1rem;
-    font-size: 1.5rem;
-    z-index: 10;
-    user-select: none;
-  }
-
-  /*button changes color upon hover to open dropdown*/
-  .dropbtn:hover {
-    cursor: pointer;
-    background-color: #D31B52;
-  }
-
-  .dropdown {
-    height: 0%;
-    width: 100%;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    background-color: #1A1A1D; /* Dark Brown color */
-    overflow-y: hidden;
-
-  }
-
-  .dropdownLinks {
-    position: relative;
-    top: 0%;
-    width: 100%; /* 100% width */
-    text-align: center; /* Centered links */
-    margin-top: 0px;
-    display: block;
-  }
-
-  /* Links inside the dropdown */
-  .dropdown a {
-      color: white;
-      padding: 8px;
-      text-decoration: none;
-      display: block;
-      font-family: 'Autour One', cursive;
-      transition: 0.3s;
-      font-size: 36px;
-      line-height: 2em;
-  }
-
-  /* Change color of dropdown links on hover */
-  .dropdownLinks a:hover, .dropdownLinks a:focus {background-color: #C3073F}
-
-  .dropdown .closebtn {
-      position: absolute;
-      top: 2rem;
-      left: 2rem;
-      font-size: 100px;
-      color: #C3073F;
-
-  }
-
-  /*changes size of greeting*/
-  #greetingFormat {
-    font-size: .7rem;
-  }
-
 
 }
