@@ -2,12 +2,26 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 h1 {
-  font-size: 45px;
+  font-size: 2.1em;
   color: #D30450;
 }
 
+.descriptionContainer span {
+  width: 90%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#heading {
+  height: 20%;
+}
+
+#description {
+  height: 60%;
+}
+
 p {
-  font-size: 18px;
+  font-size: 1em;
 }
 
 .descriptionContainer {
@@ -68,7 +82,7 @@ ul li a:hover {
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 840px) {
 
   .contentContainer {
     display: flex;
@@ -92,7 +106,7 @@ ul li a:hover {
   .imageContainer {
     width: 100%;
   }
-  
+
   .descriptionContainer {
     margin-left: 70px;
   }

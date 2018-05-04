@@ -4,12 +4,27 @@ body {
     padding: 0;
 }
 h1 {
-  font-size: 45px;
+  font-size: 2.1em;
   color: #D30450;
 }
 
+.descriptionContainer span {
+  width: 90%;
+}
+
+#heading {
+  height: 20%;
+  margin-bottom: 10px;
+}
+
+#description {
+  height: 70%;
+  overflow: auto;
+  margin-top: 10px;
+}
+
 p {
-  font-size: 18px;
+  font-size: 1em;
 }
 
 .descriptionContainer {
@@ -25,6 +40,7 @@ p {
   background-color: rgb(0, 0, 0);
   color: white;
   padding: 50px;
+  overflow: auto;
 }
 
 .imageContainer {
@@ -70,7 +86,7 @@ ul li a:hover {
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 900px) {
 
   .contentContainer {
     display: flex;
@@ -98,5 +114,6 @@ ul li a:hover {
   .descriptionContainer {
     margin-left: 70px;
   }
+
 
 }
